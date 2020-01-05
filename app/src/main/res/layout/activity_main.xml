@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#d9eeec">
+
+    <Button
+        android:id="@+id/bt_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/et_chat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/et_chat"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:hint="Masukkan pesan ..."
+        tools:ignore="Autofill,HardcodedText,TextFields" />
+
+    <TextView
+        android:id="@+id/tv_chat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bt_submit"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:background="#b2fcff"
+        android:padding="10dp"
+        android:text="Hei juga, kabar baik !"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tv_chat2"
+        android:layout_margin="10dp"
+        android:background="#fc7fb2"
+        android:padding="10dp"
+        android:text="Haloo, apa kabar?"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>
+
